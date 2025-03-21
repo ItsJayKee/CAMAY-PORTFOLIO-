@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JayKee's Portfolio</title>
+</head>
+<body>
+<!--navigation menu-->
+<nav>
+    <div class="nav-container">
+        <div class="logo">
+            <span>JK's PORTFOLIO</span>
+    </div>
+    <div class="links">
+    <div class="link"><a href="#" onclick="scrollToHome()">Home</a></div>
+    <div class="link"><a href="#" onclick="scrollToAbout()">About</a></div>
+    <div class="link"><a href="#" onclick="scrollToSkills()">Skills</a></div>
+    <div class="link"><a href="#" onclick="scrollToServices()">Goals</a></div>
+    <div class="link"><a href="#" onclick="scrollToContact()">Contact</a></div>
+    </div>
+    <script>
+        function scrollToHome() {
+            document.getElementById("main-container").scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToAbout() {
+            document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToSkills() {
+            document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToServices() {
+            document.getElementById("services").scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }        
+    </script>
+    
+    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About
+            <a href="#">Skills</a>
+            <a href="#">Goals</a>
+            <a href="#">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+            </div>
+</nav>
+<section>
+    <div class="main-container">
+<div class="image">
+    <img src="SIDE.jpg" alt="">
+    </div>
+
+    <div class="content">
+<h1 data-aos="fade-left">
+Hi! I'm 
+<span> JK CAMAY</span>
+</h1>
+<div class="typewritter">
+    I'm a 
+    <span class="typewritter-text">VERY TALL PERSON</span>
+    <label for="">|</label>
+</div>
+<p>Grade 11 student in section hawking</p>
+<div class="social-links">
+<a href="https://github.com/ItsJayKee">
+<img src="GITHUB">
+</a>
+<a href="https://www.facebook.com/ItsJayKee">
+    <img src="FACEBOOK.png">
+     </a>
+     <a href="https://www.linkedin.com/in/jaykee-camay-118096355/">
+        <img src="LINKEDIN.svg">
+        </a>
+        <a href="#">
+            <img src="TWITTERR.png">
+            </a>
+    </div>
+    <div onclick="scrollToContacts()" class="btn">
+        <button>Hire me</button>
+        <script>
+                    function scrollToContacts() {
+            document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+        }
+        </script>
+
+    </div>
+    </div>
+    </div>
+</section>
+
+<!--About section start-->
+<section class="about" id="about">
+    <div class="content">
+        <div class="title"><span>About ME</span></div>
+        <div class="about-details">
+            <div class="left">
+                <img src="WIDE.jpg" alt=""/>
+            </div>
+            <div class="right">
+                <div class="topic">Creating Is My Passion</div>
+                <p>I want to make a game that will surpass any games ever created</p>
+                <div class="button">
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Skills Section Start-->
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic">This is what I've learned in the past 3 quarters                   
+                </div>
+                <p data-aos="fade-right">I will use this Knowledge for my future dreams and works</p>
+                <div class="experience">
+                    <div class="num">8</div>
+                    <div class="exp">Months of <br/> Experience
+                    </div>
+                </div>
+            </div>
+            <!---Avoid using percentage to measure your skills-->>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">HTML</div>
+                    <div class="per">90%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">CSS</div>
+                    <div class="per">70%</div>
+                </div>
+                <div class="box">
+                    <div class="topic">JAVASCRIPT</div>
+                    <div class="per">20%</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--My Goals Section Start-->
+<section class="services" id="services">
+    <div class="content">
+    <div class="title"><span>Goals</span></div>
+    <div class="boxes">
+        <div class="box">
+            <div class="icon">
+                <img src="game developer.avif">
+            </div>
+            <div class="topic">Becoming a future Game Developer</div>
+            <p>Becoming a game developer is an exciting journey that combines creativity, coding, and problem-solving. With a passion for gaming and a drive to learn, you can create immersive experiences that bring joy to players worldwide.</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="PROGRAMMING LANGUAGES.jpg">
+            </div>
+            <div class="topic">Learning new languages</div>
+            <p>Learning more programming languages gives me more power, flexibility, and career opportunities. Start with one like C+ or C++, then expanding these skills as I grow</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="games_streaming.webp">
+            </div>
+            <div class="topic">Making many games</div>
+            <p>I want to bring my ideas to life, improve my problem-solving skills, and share my creativity with others. It also helps me build a strong foundation for a future career in game development. By learning and practicing, I can create fun and engaging games while enjoying the process.</p>
+        </div>
+        <div class="box">
+            <div class="icon">
+                <img src="JOB.webp">
+            </div>
+            <div class="topic">Build a Career as a Professional Developer</div>
+            <p>I can create useful programs, websites, or games and turn my skills into a job. Programming is always growing, so I can find good work in different industries. It also helps me solve problems and improve my thinking skills. Plus, I can work for a company or even start my own projects. A career in programming gives me stability, creativity, and the chance to make a difference with my work.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--Contact Me section start-->
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title">
+            <span>Contact Me</span>
+        </div>
+        <div class="text">
+            <div class="topic">Have Any Project?</div>
+            <p>Contact me, and work with me, so we together can make a positive change while both of us gaining benefits</p>
+            <div class="button">
+                <a href="https://www.facebook.com/ItsJayKee">
+                <button>Let's Chat!</button> </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer Section Start-->
+<footer>
+    <div class="text">
+        <span>Created By
+     <a href="#">JAYKEE CAMAY</a>
+     |&#169; 2025 All Rights Reserved
+        </span>
+        </div>
+</footer>
+
+
+</body>
+</html>
