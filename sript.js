@@ -13,6 +13,6 @@
         function scrollToContact() {
             document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
         }
-                            function scrollToContacts() {
+        function scrollToContacts() {
             document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-                            }
+        }
